@@ -1,3 +1,5 @@
+#Write a program that performs a rotation cypher.
+
 def encrypt(string, shift):
     cipher = ''
     for char in string:
@@ -11,6 +13,6 @@ def encrypt(string, shift):
 
 text = input("Enter string: ")
 s = int(input ("Enter Shift number: "))
-print("Original string", text1)
+print("Original string", text)
 
 print ("After Encryption : ", encrypt(text,s))
