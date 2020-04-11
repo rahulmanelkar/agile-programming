@@ -28,7 +28,7 @@ class SimpleTest(unittest.TestCase):
     def testDivide8(self):
         self.assertEqual(divide (8,2),4)
 
-    def testDevide9(self):
+    def testDivide9(self):
         self.assertEqual(divide (25.0,5),5.0)
 
 if __name__ == '__main__':
