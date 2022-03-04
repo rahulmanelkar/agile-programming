@@ -14,3 +14,13 @@ try :
     n = square (-2)
 except AssertionError as msg:
     print(msg)
+
+def avg(marks):
+    assert len(marks) != 0, "List is Empty"
+    return sum(marks)/len(marks)
+
+mark2 = [20, 21,22,23,24,25]
+print ("Ave of mark2: ", avg(mark2))
+
+mark1 = []
+print ("Ave of mark1: ", avg(mark1))
