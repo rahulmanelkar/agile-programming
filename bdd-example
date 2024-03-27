@@ -1,4 +1,4 @@
-file: calculator.feature
+#file: calculator.feature
 Feature: Calculator
  	As an author of this article
  	I want to demonstrate
@@ -26,7 +26,7 @@ Feature: Calculator
             
             
             
-   file: features/steps/calculator.py
+  # file: features/steps/calculator.py
    from behave import given, when, then
 from calculator1 import Calculator
 
@@ -48,7 +48,7 @@ def check_result(context, result):
     assert context.result == result
     
     
- file: features/steps/calculator1.py
+# file: features/steps/calculator1.py
  class Calculator(object):
     def add(self, x, y):
         return x + y
