@@ -30,7 +30,7 @@ def getTranslatedMessage(mode, message, key):
     translated = ''
 
     for symbol in message:
-        #print ("snmbol==============",symbol)
+        #print ("symbol==============",symbol)
         if symbol.isalpha():
             num = ord(symbol)
             num += key
@@ -40,6 +40,7 @@ def getTranslatedMessage(mode, message, key):
                 num -= 26
             elif num < ord('A'):
                 num += 26
+            translated += chr(num)
         elif symbol.islower():
             if num > ord('z'):
                 num -= 26
